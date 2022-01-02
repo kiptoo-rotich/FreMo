@@ -1,0 +1,1 @@
+web: gunicorn FreMo.wsgi --log-file -

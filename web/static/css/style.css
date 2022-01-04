@@ -31,8 +31,8 @@
     }
     
     .navbar {
-        background-color: rgba(255, 255, 60, 0.844);
-        position: relative;
+        background-color: #faf0e6;
+        position: sticky;
         top: 0%;
     }
     
@@ -47,7 +47,7 @@
     }
     
     .title {
-        color: rgb(225, 225, 30);
+        color: #faf0e6;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 50px;
         font-weight: 700;
@@ -59,7 +59,7 @@
     }
     
     .our_services {
-        background-color: rgba(255, 255, 60, 0.844);
+        background-color: #faf0e6;
         border: 0px;
         border-radius: 30px;
         padding: 10px 40px 10px 40px;
@@ -112,4 +112,146 @@
     .hover:hover:after {
         transform: scaleX(1);
         transform-origin: bottom left;
+    }
+    
+    .services {
+        margin-top: 5%;
+    }
+    
+    td {
+        border: 2px solid black;
+        padding: 4%;
+    }
+    
+    .table_visit {
+        width: 100%;
+    }
+    
+    h6 {
+        font-size: 27px;
+        font-family: sans-serif;
+        text-align: center;
+    }
+    
+    .mother-kiss {
+        position: sticky;
+        border-radius: 50%;
+    }
+    
+    .care {
+        background-image: url("../Images/Ultrasound\ \(copy\).jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 5% 0% 5% 0%;
+        justify-content: space-around;
+        display: flex;
+        color: blanchedalmond;
+    }
+    
+    @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+    .body {
+        background-color: rgba(200, 224, 233, 0.05);
+        background-image: url(/images/Screenshot\ from\ 2021-12-04\ 18-50-37.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .contact {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background-color: #faf0e6;
+        padding: 2% 4% 2% 4%;
+    }
+    
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .copyright {
+        font-weight: bold;
+        font-size: 24px;
+    }
+    
+    .social-container {
+        width: 600px;
+        /* margin: 40vh auto; */
+        text-align: center;
+    }
+    
+    .social-icons {
+        padding: 0;
+        list-style: none;
+        margin: 1em;
+    }
+    
+    .social-icons li {
+        display: inline-block;
+        margin: 0.15em;
+        position: relative;
+        font-size: 1.2em;
+    }
+    
+    .social-icons i {
+        color: #fff;
+        position: absolute;
+        top: 21px;
+        left: 21px;
+        transition: all 265ms ease-out;
+    }
+    
+    .social-icons a {
+        display: inline-block;
+    }
+    
+    .social-icons a:before {
+        transform: scale(1);
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+        content: " ";
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: block;
+        background: linear-gradient(45deg, #00b5f5, #002a8f);
+        transition: all 265ms ease-out;
+    }
+    
+    .social-icons a:hover:before {
+        transform: scale(0);
+        transition: all 265ms ease-in;
+    }
+    
+    .social-icons a:hover i {
+        transform: scale(2.2);
+        -ms-transform: scale(2.2);
+        -webkit-transform: scale(2.2);
+        color: #00b5f5;
+        background: -webkit-linear-gradient(45deg, #00b5f5, #002a8f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 265ms ease-in;
+    }
+    
+    .carousel-inner {
+        margin: 3%;
+    }
+    
+    .recent_posts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10% 10% 0% 10%;
+    }
+    
+    .recent_posts>div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .first_post>img {
+        float: right;
     }

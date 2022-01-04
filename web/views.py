@@ -1,10 +1,8 @@
 from django.shortcuts import render
 from django.http.response import HttpResponse, HttpResponseRedirect, Http404
-import json
 from django.views.decorators.csrf import csrf_exempt
 from requests.auth import HTTPBasicAuth
 
-import requests
 def index(request):
     return render(request,'main/index.html')
 

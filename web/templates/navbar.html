@@ -15,7 +15,7 @@
 
 <body>
     {%block content%}
-    <nav class="navbar navbar-expand-lg  navbar-right">
+    <nav class="navbar navbar-expand-lg  navbar-header">
         <a class="navbar-brand hover" href="{%url 'Home'%}" id="title">FreMo Medical and Birth Centre</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -32,13 +32,19 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Services
               </a>
+
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item hover" href="{%url 'Medical'%}">Medical</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item hover" href="{%url 'Medical'%}">Medical</a>
-                            <a class="dropdown-item hover" href="{%url 'Education'%}">Education</a>
-                        </div>
-                        <a class="dropdown-item hover" href="{%url 'Education'%}">Education</a>
+                        <a class="dropdown-item hover" href="{%url 'Medical'%}">Specialist Clinics</a>
+                        <a class="dropdown-item hover" href="{%url 'Education'%}">Outpatient Services</a>
+                        <a class="dropdown-item hover" href="{%url 'Education'%}">Inpatient Services</a>
+                        <a class="dropdown-item hover" href="{%url 'Education'%}">Laboratory Services</a>
+                        <a class="dropdown-item hover" href="{%url 'Education'%}">Pharmacy</a>
+                        <a class="dropdown-item hover" href="{%url 'Education'%}">Radiology & Ultra-Sound Services</a>
+                        <a class="dropdown-item hover" href="{%url 'Education'%}">Nutrition Services</a>
+                        <a class="dropdown-item hover" href="{%url 'Education'%}">Counselling Services</a>
+
+
+
                     </div>
                 </li>
                 <li class="nav-item dropdown active">

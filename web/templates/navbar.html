@@ -16,7 +16,7 @@
 <body>
     {%block content%}
     <nav class="navbar navbar-expand-lg  navbar-right">
-        <a class="navbar-brand hover" href="{%url 'Home'%}">FreMo Medical and Birth Center</a>
+        <a class="navbar-brand hover" href="{%url 'Home'%}" id="title">FreMo Medical and Birth Centre</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -34,6 +34,10 @@
               </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item hover" href="{%url 'Medical'%}">Medical</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item hover" href="{%url 'Medical'%}">Medical</a>
+                            <a class="dropdown-item hover" href="{%url 'Education'%}">Education</a>
+                        </div>
                         <a class="dropdown-item hover" href="{%url 'Education'%}">Education</a>
                     </div>
                 </li>

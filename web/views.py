@@ -12,3 +12,6 @@ def education(request):
 
 def donate(request):
     return render(request,'main/donate.html')
+
+def specialist(request):
+    return render(request,'main/specialist.html')

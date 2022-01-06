@@ -1,0 +1,17 @@
+{%extends 'base.html'%}{%load bootstrap4%}{%load static%} {%block content%}
+
+<form action="" method="post">
+    {% for message in messages %}
+    <div class="container-fluid p-0">
+
+    </div>
+    {% endfor %} {% csrf_token %} {% bootstrap_form Contact_Form%}
+
+    <div class="form-group">
+        <center><input type="submit" class="btn btn-primary btn-md" value="ADD" style="width:40%"></center>
+    </div>
+
+    <input type="hidden" name="next" value="{{next}}">
+</form>
+
+{%endblock%}

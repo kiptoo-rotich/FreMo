@@ -380,7 +380,7 @@
         }
         
         .fadein {
-            animation: fadeIn 0.9s 1;
+            animation: fadeIn 1.9s 1;
             animation-fill-mode: forwards;
         }
         
@@ -462,8 +462,9 @@
         }
         
         @media only screen and (max-width: 600px) {
-            #title {
-                font-size: 12px;
+            .title {
+                font-size: 42px;
+                color: black;
             }
             #phone {
                 font-size: 12px;

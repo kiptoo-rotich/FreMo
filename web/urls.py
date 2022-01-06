@@ -9,5 +9,6 @@ urlpatterns=[
     path('donate_money/',views.donate,name="Donations"),
     path('specialist_clinic/',views.specialist,name="specialist"),
     path('outpatient_clinic/',views.outpatient,name="outpatient"),
-    path('inpatient_clinic/',views.inpatient,name="inpatient")
+    path('inpatient_clinic/',views.inpatient,name="inpatient"),
+    path('contact_us/',views.contactus,name="contact_us")
 ]

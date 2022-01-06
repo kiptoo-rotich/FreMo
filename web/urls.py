@@ -7,5 +7,6 @@ urlpatterns=[
     path('medical_services/',views.medical,name="Medical"),
     path('education_services/',views.education,name="Education"),
     path('donate_money/',views.donate,name="Donations"),
-    path('specialist_clinic/',views.specialist,name="specialist")
+    path('specialist_clinic/',views.specialist,name="specialist"),
+    path('outpatient_clinic/',views.outpatient,name="outpatient")
 ]

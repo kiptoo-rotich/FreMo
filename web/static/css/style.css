@@ -359,6 +359,40 @@
             margin-left: 5%;
         }
         
+        #body {
+            background-color: blanchedalmond;
+        }
+        
+        .heading {
+            text-align: center;
+            font-weight: bolder;
+        }
+        
+        #sub_head {
+            font-weight: 600;
+        }
+        
+        .outpatient {
+            background-color: white;
+            color: black;
+        }
+        
+        .emergency {
+            background-color: rgb(255, 32, 32);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10%;
+            height: 50%;
+        }
+        
+        .outpatient>.row {
+            margin: 0% 5% 2% 2%;
+            padding-top: 3%;
+        }
+        
         @media only screen and (max-width: 600px) {
             #title {
                 font-size: 12px;

@@ -15,3 +15,6 @@ def donate(request):
 
 def specialist(request):
     return render(request,'main/specialist.html')
+
+def outpatient(request):
+    return render(request,'main/outpatient.html')

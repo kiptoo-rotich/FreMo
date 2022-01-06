@@ -18,3 +18,6 @@ def specialist(request):
 
 def outpatient(request):
     return render(request,'main/outpatient.html')
+
+def inpatient(request):
+    return render(request,'main/inpatient.html')

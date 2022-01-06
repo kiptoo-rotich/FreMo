@@ -39,13 +39,13 @@
             background-image: url('../Images/landing.jpg');
             background-size: cover;
             background-repeat: no-repeat;
-            padding: 10% 0% 10% 0%;
+            padding: 0% 0% 10% 0%;
         }
         
         .landing_background>div>div>div>p {
             text-align: center;
             float: right;
-            color: white;
+            color: #faf0e6;
             font-size: 18px;
         }
         
@@ -72,6 +72,40 @@
         .container1 {
             margin-top: 6%;
             margin-bottom: 5%;
+        }
+        
+        .animated1 {
+            position: relative;
+            -webkit-animation: mymove 25s linear;
+        }
+        
+        @keyframes mymove {
+            0% {
+                margin-left: 0%;
+            }
+            50% {
+                margin-left: 45%;
+            }
+            100% {
+                margin-left: 0%;
+            }
+        }
+        
+        .animated {
+            position: relative;
+            -webkit-animation: rightThenLeft 4s linear;
+        }
+        
+        @-webkit-keyframes rightThenLeft {
+            0% {
+                margin-right: 0%;
+            }
+            50% {
+                margin-right: 30%;
+            }
+            100% {
+                margin-right: 0;
+            }
         }
         
         .title {
@@ -201,6 +235,35 @@
         
         .care>h4 {
             margin: 10%;
+        }
+        
+        .heading {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .heading>h1 {
+            font-weight: bold;
+        }
+        
+        #sub_head {
+            font-weight: 600;
+        }
+        
+        .emergency {
+            background-color: orange;
+            color: white;
+            text-align: center;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .inpatients {
+            padding: 0% 3% 3%3%;
         }
         
         @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
@@ -335,16 +398,19 @@
             height: 0;
             border-left: 600px solid transparent;
             border-right: 600px solid transparent;
-            border-top: 20px solid #faf0e6;
+            border-top: 40px solid #faf0e6;
             align-items: center;
+            margin-bottom: 8%;
         }
         
         .specialist-up {
             width: 0;
             height: 0;
-            border-left: 350px solid transparent;
-            border-right: 350px solid transparent;
-            border-bottom: 10px solid #faf0e6;
+            border-left: 700px solid transparent;
+            border-right: 700px solid transparent;
+            border-bottom: 40px solid #faf0e6;
+            align-items: center;
+            width: 100%;
         }
         
         .s-title {
@@ -359,10 +425,6 @@
             margin-left: 5%;
         }
         
-        #body {
-            background-color: blanchedalmond;
-        }
-        
         .heading {
             text-align: center;
             font-weight: bolder;
@@ -370,6 +432,12 @@
         
         #sub_head {
             font-weight: 600;
+        }
+        
+        .sliding {
+            display: flex;
+            flex-direction: row;
+            font-family: 'Times New Roman', Times, serif;
         }
         
         .outpatient {
@@ -384,8 +452,8 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 10%;
-            height: 50%;
+            padding: 3%;
+            height: 15%;
         }
         
         .outpatient>.row {

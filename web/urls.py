@@ -16,4 +16,7 @@ urlpatterns=[
     path('pharmacy/',views.pharmacy,name="pharmacy"),
     path('aboutus/',views.aboutus,name="aboutus"),
     path('counselling/',views.counselling,name="counselling"),
+    path('nutrition/',views.nutrition,name="nutrition"),
+    path('payments/',views.pay,name="pay"),
+    path('donations/',views.donate,name="donate"),
 ]

@@ -515,6 +515,10 @@
             animation: spin 12s infinite;
         }
         
+        .nutrition>div {
+            padding: 3% 5% 1% 3%;
+        }
+        
         @-webkit-keyframes spin {
             0% {
                 -webkit-margin-left: 0;
@@ -543,6 +547,12 @@
             50% {
                 margin-left: -180px;
             }
+        }
+        
+        .mpesa {
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         @media only screen and (max-width: 600px) {

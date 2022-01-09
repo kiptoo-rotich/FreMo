@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http.response import HttpResponse, HttpResponseRedirect, Http404
-from .forms import Contact_Form
+from .forms import Contact_Form,Payment_Form
 
 def index(request):
     return render(request,'main/index.html')
@@ -38,6 +38,17 @@ def aboutus(request):
 def counselling(request):
     return render(request,'main/counselling.html')
 
+def nutrition(request):
+    return render(request,'main/nutrition.html')
+
 def contactus(request):
     form=Contact_Form()
-    return render(request,'main/contactus.html',{'Contact_Form':Contact_Form})
+    return render(request,'main/contactus.html',{'Contact_Form':form})
+
+def pay(request):
+    form=Payment_Form()
+    return render(request,'main/payments.html',{'Payment_Form':form})
+
+def donate(request):
+    form=Payment_Form()
+    return render(request,'main/donation.html',{'Payment_Form':form})

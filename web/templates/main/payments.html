@@ -1,0 +1,27 @@
+{%extends 'base.html'%}{%load bootstrap4%}{%load static%} {%block content%}
+<div class="container">
+    <div class="row">
+        <div class="col-xm-12 col-sm-8 col-md-8 col-lg-8">
+            <h3 class="text-center">Provide our details below to make payments</h3>
+            <form action="" method="post">
+                {% for message in messages %}
+                <div class="container-fluid p-0">
+
+                </div>
+                {% endfor %} {% csrf_token %} {% bootstrap_form Payment_Form%}
+
+                <div class="form-group">
+                    <center><input type="submit" class="btn btn-primary btn-md" value="Send" style="width:40%"></center>
+                </div>
+
+                <input type="hidden" name="next" value="{{next}}">
+            </form>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4 mpesa">
+            <img src="../../static/Images/mpesa.png" alt="M-Pesa" width="100%">
+        </div>
+    </div>
+</div>
+
+
+{%endblock%}

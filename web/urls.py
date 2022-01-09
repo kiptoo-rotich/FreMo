@@ -10,5 +10,10 @@ urlpatterns=[
     path('specialist_clinic/',views.specialist,name="specialist"),
     path('outpatient_clinic/',views.outpatient,name="outpatient"),
     path('inpatient_clinic/',views.inpatient,name="inpatient"),
-    path('contact_us/',views.contactus,name="contact_us")
+    path('contact_us/',views.contactus,name="contact_us"),
+    path('ultra_sound/',views.ultrasound,name="ultrasound"),
+    path('laboratory/',views.laboratory,name="laboratory"),
+    path('pharmacy/',views.pharmacy,name="pharmacy"),
+    path('aboutus/',views.aboutus,name="aboutus"),
+    path('counselling/',views.counselling,name="counselling"),
 ]

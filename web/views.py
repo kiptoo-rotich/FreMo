@@ -23,6 +23,21 @@ def outpatient(request):
 def inpatient(request):
     return render(request,'main/inpatient.html')
 
+def ultrasound(request):
+    return render(request,'main/ultra_sound.html')
+
+def laboratory(request):
+    return render(request,'main/laboratory.html')
+
+def pharmacy(request):
+    return render(request,'main/pharmacy.html')
+
+def aboutus(request):
+    return render(request,'main/aboutus.html')
+
+def counselling(request):
+    return render(request,'main/counselling.html')
+
 def contactus(request):
     form=Contact_Form()
     return render(request,'main/contactus.html',{'Contact_Form':Contact_Form})

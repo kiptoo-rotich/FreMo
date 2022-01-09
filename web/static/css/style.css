@@ -49,12 +49,17 @@
             font-size: 18px;
         }
         
+        .land {
+            margin-top: -5%
+        }
+        
         .navbar {
             background-color: #faf0e6;
             position: sticky;
             top: 0%;
             z-index: 300;
-            padding-right: 10%;
+            padding-right: 5%;
+            bottom: 0px;
         }
         
         .dropdown:hover>.dropdown-menu {
@@ -116,15 +121,20 @@
             text-align: right;
         }
         
+        .description {
+            margin-top: 3%;
+        }
+        
         .services>div>img {
             box-shadow: 3px 5px 4px 5px lightgray;
         }
         
         .our_services {
-            background-color: #faf0e6;
+            background-color: #0000008c;
             border: 0px;
             border-radius: 30px;
             padding: 10px 40px 10px 40px;
+            color: black;
             bottom: 0%;
             font-weight: 700;
             float: right;
@@ -400,7 +410,8 @@
             border-right: 600px solid transparent;
             border-top: 40px solid #faf0e6;
             align-items: center;
-            margin-bottom: 8%;
+            margin-bottom: 2%;
+            z-index: 300;
         }
         
         .specialist-up {
@@ -428,6 +439,10 @@
         .heading {
             text-align: center;
             font-weight: bolder;
+        }
+        
+        .heading_page {
+            top: -5%;
         }
         
         #sub_head {
@@ -459,6 +474,75 @@
         .outpatient>.row {
             margin: 0% 5% 2% 2%;
             padding-top: 3%;
+        }
+        
+        .ultrasound_services>div>div {
+            padding: 1% 5% 1% 5%;
+        }
+        
+        #about {
+            margin: 0% 3% 0% 3%;
+        }
+        
+        .carousel-caption {
+            top: 50%;
+            transform: translateY(-40%);
+        }
+        
+        .carouselExampleIndicators {
+            z-index: -300;
+        }
+        
+        .animated-heading {
+            color: darkblue;
+            font-family: arial;
+            border-bottom: 5px solid darkblue;
+            height: 60px;
+            overflow: hidden;
+            border-radius: 10px;
+            padding: 0px 15px;
+        }
+        
+        .txt1 {
+            text-align: center;
+            font-size: 20px;
+            border-radius: 10px;
+            display: block;
+            line-height: 60px;
+        }
+        
+        .txt1:first-child {
+            animation: spin 12s infinite;
+        }
+        
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-margin-left: 0;
+            }
+            16% {
+                -webkit-margin-left: -60px;
+            }
+            33% {
+                -webkit-margin-left: -120px;
+            }
+            50% {
+                -webkit-margin-left: -180px;
+            }
+        }
+        
+        @keyframes spin {
+            0% {
+                margin-left: 0;
+            }
+            16% {
+                margin-left: -60px;
+            }
+            33% {
+                margin-left: -120px;
+            }
+            50% {
+                margin-left: -180px;
+            }
         }
         
         @media only screen and (max-width: 600px) {
@@ -557,5 +641,24 @@
             .fadein {
                 animation: fadeIn 0.9s 1;
                 animation-fill-mode: forwards;
+            }
+            .specialist-header {
+                width: 0;
+                height: 0;
+                border-left: 200px solid transparent;
+                border-right: 200px solid transparent;
+                border-top: 40px solid #faf0e6;
+                align-items: center;
+                margin-bottom: 2%;
+                z-index: 300;
+            }
+            .specialist-up {
+                width: 0;
+                height: 0;
+                border-left: 200px solid transparent;
+                border-right: 200px solid transparent;
+                border-bottom: 40px solid #faf0e6;
+                align-items: center;
+                width: 100%;
             }
         }

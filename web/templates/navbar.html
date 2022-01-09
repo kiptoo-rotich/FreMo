@@ -15,8 +15,8 @@
 
 <body>
     {%block content%}
-    <div class="animated1 sliding">
-        <p class="pl-5">fremocentre@gmail.com | Donate via Paypal birthfire@gmail.com | +254710274860/+254751395690</p>
+    <div class="animated-heading sliding">
+        <p class="pl-5 txt1">fremocentre@gmail.com | Donate via Paypal birthfire@gmail.com | +254710274860/+254751395690</p>
     </div>
     <nav class="navbar navbar-expand-lg navbar-header ">
         <a class="navbar-brand hover" href="{%url 'Home'%}" id="title">FreMo Medical and Birth Centre</a>
@@ -28,26 +28,26 @@
         </a>
         <div class="container-fluid navbar-collapse collapse">
             <ul class="navbar-nav ml-auto">
+
                 <li class="nav-item active">
                     <a class="nav-link hover" href="{%url 'Home'%}">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link hover" href="{%url 'aboutus'%}">About Us <span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Services
               </a>
-
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item hover" href="{%url 'specialist'%}">Specialist Clinics</a>
                         <a class="dropdown-item hover" href="{%url 'outpatient'%}">Outpatient Services</a>
                         <a class="dropdown-item hover" href="{%url 'inpatient'%}">Inpatient Services</a>
-                        <a class="dropdown-item hover" href="{%url 'Education'%}">Laboratory Services</a>
-                        <a class="dropdown-item hover" href="{%url 'Education'%}">Pharmacy</a>
-                        <a class="dropdown-item hover" href="{%url 'Education'%}">Radiology & Ultra-Sound Services</a>
+                        <a class="dropdown-item hover" href="{%url 'laboratory'%}">Laboratory Services</a>
+                        <a class="dropdown-item hover" href="{%url 'pharmacy'%}">Pharmacy</a>
+                        <a class="dropdown-item hover" href="{%url 'ultrasound'%}">Ultra-Sound Services</a>
                         <a class="dropdown-item hover" href="{%url 'Education'%}">Nutrition Services</a>
-                        <a class="dropdown-item hover" href="{%url 'Education'%}">Counselling Services</a>
-
-
-
+                        <a class="dropdown-item hover" href="{%url 'counselling'%}">Counselling Services</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown active">
@@ -64,6 +64,7 @@
                 </li>
             </ul>
         </div>
+
     </nav>{%endblock%}
 </body>
 {%block script%}

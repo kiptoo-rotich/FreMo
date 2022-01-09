@@ -16,3 +16,4 @@ class ContactUs(models.Model):
     Last_name=models.CharField(max_length=20)
     Phone_number=models.IntegerField()
     Email_address=models.EmailField()
+    message=models.TextField()

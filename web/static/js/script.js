@@ -20,8 +20,21 @@ function typeWriter() {
         setTimeout(typeWriter, speed);
     }
 }
+
 typeWriter()
 
+var x = 0;
+var word = 'Hello. How can we help you today?'; /* The text */
+var speedy = 50; /* The speed/duration of the effect in milliseconds */
+
+function typeWrite() {
+    if (x < word.length) {
+        document.getElementById("chating").innerHTML += word.charAt(x);
+        x++;
+        setTimeout(typeWrite, speedy);
+    }
+}
+typeWrite()
 
 $('#recipeCarousel').carousel({
     interval: 2000

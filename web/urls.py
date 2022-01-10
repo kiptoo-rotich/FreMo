@@ -19,4 +19,5 @@ urlpatterns=[
     path('nutrition/',views.nutrition,name="nutrition"),
     path('payments/',views.pay,name="pay"),
     path('donations/',views.donate,name="donate"),
+    path('school/',views.school,name="school"),
 ]

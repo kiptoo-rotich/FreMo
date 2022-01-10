@@ -41,9 +41,9 @@ def counselling(request):
 def nutrition(request):
     return render(request,'main/nutrition.html')
 
-def contactus(request):
+def book(request):
     form=Contact_Form()
-    return render(request,'main/contactus.html',{'Contact_Form':form})
+    return render(request,'main/book.html',{'Contact_Form':form})
 
 def pay(request):
     form=Payment_Form()

@@ -1,7 +1,20 @@
 {%extends 'base.html'%}{%load bootstrap4%}{%load static%} {%block content%}
+
+<div class="specialist-header">
+
+</div>
 <div class="container">
     <div class="row">
-        <div class="col-xm-12 col-sm-8 col-md-8 col-lg-8">
+        <div class="col-xm-12 col-sm-6 col-md-6 col-lg-6">
+            <h2>Donation details</h2>
+            <ul id="ul">
+                <li class="fadein">Account Name Fremo: Medical Centre</li>
+                <li class="fadein">Address Naivasha Road Kawangware</li>
+                <li class="fadein">Account Number 0630280517371 </li>
+                <li class="fadein">Swift Code EQBLKENA</li>
+                <li class="fadein">BankCode:68063 </li>
+                <li class="fadein">Branch name :Kawangware</li>
+            </ul>
             <h3 class="text-center">Provide our details below to make your donation</h3>
             <form action="" method="post">
                 {% for message in messages %}
@@ -17,7 +30,21 @@
                 <input type="hidden" name="next" value="{{next}}">
             </form>
         </div>
-        <div class="col-sm-4 col-md-4 col-lg-4 mpesa">
+        <div class="col-sm-6 col-md-6 col-lg-6 mpesa">
+            <h2>DONATIONS</h2>
+            <p>Donations big or small are most welcome. From anywhere in the world, you can pay by World Remit</p>
+            <ol>
+                <li>Download the app.</li>
+                <li>Enter recipient details.<br>Moffat Osoro, +25410274860(M-Pesa number and phone number)</li>
+                <li>Send donation. You will get a confirmation text with code to enter.</li>
+            </ol>
+            <hr>
+
+            <h4>In Australia;</h4>
+            <p>You can send donations to FreMo Fundraising<br><b>BSB 034-243<br>Acc 285472.</b></p>
+            <hr>
+            <h4>In US,</h4>
+            <p>Tax deductable donations can be sent via Midwife Pilgrim;<br><b>www.midwifepilgrim.org/donate</b> or via our PayPal at; <br><b>midwifepilgrim@gmail.com</b>.<br>100% of the donations go to centre. <br><b>Asante sana</b></p>
             <img src="../../static/Images/mpesa.png" alt="M-Pesa" width="100%">
         </div>
     </div>

@@ -47,3 +47,8 @@ $('.carousel .carousel-item').each(function() {
 $('.carousel').carousel({
     interval: 1000
 })
+$(document).ready(function() {
+    $("#title").hover(function() {
+        $(".p").hide();
+    });
+});

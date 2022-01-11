@@ -49,7 +49,7 @@ git remote add origin <your-repository-url>
 
 #### Create and activate the virtual environment
 ```bash
-python3.8 -m virtualenv virtual
+python3.9 -m virtualenv virtual
 ```
 
 ```bash
@@ -84,7 +84,7 @@ python3.9 manage.py migrate
 
 #### Run the app
 ```bash
-python3.8 manage.py runserver
+python3.9 manage.py runserver
 ```
 Open [localhost:8000](http://127.0.0.1:8000/)
 
@@ -95,7 +95,7 @@ Open [localhost:8000](http://127.0.0.1:8000/)
         
 ## Built With
 
-* [Python3.8](https://docs.python.org/3/)
+* [Python3.9](https://docs.python.org/3/)
 * Django==3.2.5
 * Postgresql 
 * Boostrap

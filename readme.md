@@ -4,16 +4,13 @@
 
 ## Screenshot
 ### Landing page
-![home page](https://user-images.githubusercontent.com/48821300/126333113-d08e945f-921b-4242-acf8-ca82375bc6d1.png)
+![Screenshot from 2022-01-11 06-51-18](https://user-images.githubusercontent.com/48821300/48938029-e5cb570f-488b-4f06-b86d-ef2f543ef181.png)
 
-### Profile
-![profile](https://user-images.githubusercontent.com/48821300/126333273-618dfb3e-28e7-48f9-a4b5-ecff4f093836.png)
+### Book appointment
+![Screenshot from 2022-01-11 06-52-21](https://user-images.githubusercontent.com/48821300/148938151-dc83760f-a1b8-40c0-ad1d-0008adf48759.png)
 
-### Reviews
-![reviews](https://user-images.githubusercontent.com/48821300/126333371-97b5957b-c4b2-4d1f-b50a-d5657364df8b.png)
-
-### Search results
-![search](https://user-images.githubusercontent.com/48821300/126333460-69166654-932b-47a9-8fc8-f8413c56f655.png)
+### Payments
+![Screenshot from 2022-01-11 06-52-44](https://user-images.githubusercontent.com/48821300/148938260-4c3564cc-94f5-48d6-bc9a-b129bf74b670.png)
 
 
 ## Description

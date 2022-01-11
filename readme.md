@@ -4,7 +4,7 @@
 
 ## Screenshot
 ### Landing page
-![Screenshot from 2022-01-11 06-51-18](https://user-images.githubusercontent.com/48821300/48938029-e5cb570f-488b-4f06-b86d-ef2f543ef181.png)
+![Screenshot from 2022-01-11 06-51-18](https://user-images.githubusercontent.com/48821300/148938505-9a42e7c9-64fe-4ce3-bfbb-b4c83d1c5ec6.png)
 
 ### Book appointment
 ![Screenshot from 2022-01-11 06-52-21](https://user-images.githubusercontent.com/48821300/148938151-dc83760f-a1b8-40c0-ad1d-0008adf48759.png)

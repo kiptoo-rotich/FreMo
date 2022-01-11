@@ -632,6 +632,10 @@
         color: #999;
     }
     
+    .navbar-light>.navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;..");
+    }
+    
     @media only screen and (max-width: 600px) {
         .title {
             font-size: 42px;
@@ -747,5 +751,11 @@
             border-bottom: 40px solid #faf0e6;
             align-items: center;
             width: 100%;
+        }
+        #chating {
+            font-size: 10px;
+        }
+        .chating_id {
+            height: 45px;
         }
     }

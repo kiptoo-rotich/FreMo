@@ -62,4 +62,4 @@ class Payment_Form(forms.ModelForm):
                            'placeholder': 'This payments is ...'})) 
     class Meta:
         model=M_Pesa
-        fields='__all__'
+        fields=['phone_number','amount','description']

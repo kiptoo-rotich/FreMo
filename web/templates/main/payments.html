@@ -16,17 +16,11 @@
                 <li class="fadein">Branch name :Kawangware</li>
             </ul>
             <h3 class="text-center">Provide our details below to make payments</h3>
-            <form action="" method="post">
-                {% for message in messages %}
-                <div class="container-fluid p-0">
-
-                </div>
-                {% endfor %} {% csrf_token %} {% bootstrap_form Payment_Form%}
-
+            <form action="" method="POST" style="width:100%" enctype='multipart/form-data'>
+                {% csrf_token %} {% bootstrap_form Payment_Form %}
                 <div class="form-group">
-                    <center><input type="submit" class="btn btn-primary btn-md" value="Send" style="width:40%"></center>
+                    <input type="submit" class="btn btn-primary btn-md" value="Post">
                 </div>
-
                 <input type="hidden" name="next" value="{{next}}">
             </form>
         </div>

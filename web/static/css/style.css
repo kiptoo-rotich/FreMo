@@ -669,6 +669,94 @@
         background-image: url("data:image/svg+xml;..");
     }
     
+    section.our-team {
+        padding: 70px 0px;
+        background-color: #faf0e6;
+        text-align: center;
+        color: #fff;
+    }
+    
+    .our-team .member {
+        text-align: center;
+        margin-bottom: 20px;
+        position: relative;
+        overflow: hidden;
+        transition: 0.4s;
+        border-radius: 100%;
+        border: 6px solid #ffffff;
+    }
+    
+    .our-team h2 {
+        font-size: 36px;
+        color: #795548;
+        font-weight: normal;
+    }
+    
+    .our-team p {
+        color: #9e9e9e;
+        width: 70%;
+        margin: 10px auto 10px;
+    }
+    
+    .our-team .member:hover {
+        box-shadow: 0px 10px 0px 0px #795548;
+    }
+    
+    .our-team .member .member-info {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+    }
+    
+    .our-team .member .member-detail {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 10px;
+    }
+    
+    .our-team .member .social {
+        position: absolute;
+        left: 0;
+        bottom: -38px;
+        right: 0;
+        height: 48px;
+        transition: bottom ease-in-out 0.4s;
+        text-align: center;
+    }
+    
+    .our-team .member .social a {
+        margin: 0 10px;
+        display: inline-block;
+        color: black;
+    }
+    
+    .our-team .member .social a:hover {
+        color: black;
+    }
+    
+    .our-team .member .social i {
+        font-size: 18px;
+        margin: 0 2px;
+    }
+    
+    .our-team .member:hover .member-info {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.83) 0%, rgba(0, 0, 0, 0.57) 20%, rgba(121, 85, 72, 0.09) 100%);
+        opacity: 1;
+        transition: 0.4s;
+    }
+    
+    .our-team .member:hover .member-detail {
+        bottom: 80px;
+    }
+    
+    .our-team .member:hover .social {
+        bottom: 10px;
+    }
+    
     @media only screen and (max-width: 600px) {
         .title {
             font-size: 42px;

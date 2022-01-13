@@ -18,7 +18,7 @@ urlpatterns=[
     path('counselling/',views.counselling,name="counselling"),
     path('nutrition/',views.nutrition,name="nutrition"),
     path('lipa_na_mpesa_online/',views.lipa_na_mpesa_online,name="lipa_na_mpesa_online"),
-    path('donations/',views.donate,name="donate"),
+    path('lipa_na_mpesa_donate/',views.lipa_na_mpesa_donation,name="lipa_na_mpesa_donation"),
     path('school/',views.school,name="school"),
     
     path('access/token', views.getAccessToken, name='get_mpesa_access_token'),

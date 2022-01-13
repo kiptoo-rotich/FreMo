@@ -115,3 +115,40 @@ def lipa_na_mpesa_online(request):
         form= Payment_Form()
         return render(request,'main/payments.html',{'Payment_Form':form})
 
+
+def lipa_na_mpesa_donation(request):
+    if request.method=="POST":
+        transaction_number=request.POST.get('phone_number')
+        cell= str(254)+str(int(transaction_number))
+        remiting_number=int(cell)
+        amount=request.POST.get('pay')
+
+        form= Payment_Form(request.POST)
+        if form.is_valid():
+            amount= form.cleaned_data.get("amount")
+            description= form.cleaned_data.get("description")
+            phone_number= form.cleaned_data.get("phone_number")
+            access_token = MpesaAccessToken.validated_mpesa_access_token
+            api_url = "https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest"
+            headers = {"Authorization": "Bearer %s" % access_token}
+            request = {
+                "BusinessShortCode": LipanaMpesaPpassword.Business_short_code,
+                "Password": LipanaMpesaPpassword.decode_password,
+                "Timestamp": LipanaMpesaPpassword.lipa_time,
+                "TransactionType": "CustomerPayBillOnline",
+                "Amount": int(amount),
+                "PartyA": remiting_number, 
+                "PartyB": LipanaMpesaPpassword.Business_short_code,
+                "PhoneNumber": remiting_number, 
+                "CallBackURL": "https://sandbox.safaricom.co.ke/mpesa/",
+                "AccountReference": "Kiptoo",
+                "TransactionDesc": "Testing stk push"
+            }
+
+            response = requests.post(api_url, json=request, headers=headers)
+            return HttpResponse(f'Kindly check your phone {remiting_number} and enter mpesa pin to succesfully pay fare')
+    else:
+        form= Payment_Form()
+        return render(request,'main/donation.html',{'Payment_Form':form})
+
+

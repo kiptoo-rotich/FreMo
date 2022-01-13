@@ -63,6 +63,8 @@ def pay(request):
     form=Payment_Form()
     return render(request,'main/payments.html',{'Payment_Form':form})
 
+def volunteer(request):
+    return render(request,'main/volunteer.html')
 
 def getAccessToken(request):
     return HttpResponse("Hello, world")
